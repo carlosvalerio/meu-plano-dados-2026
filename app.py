@@ -39,8 +39,7 @@ def get_notas():
 # --- INTEGRAÇÃO COM IA (Gemini) ---
 # Aqui ele tenta pegar a chave dos "Secrets" do Streamlit Cloud ou do código local
 try:
-    API_KEY = st.secrets["gen-lang-client-0861474906
-"]
+    API_KEY = st.secrets["gen-lang-client-0861474906 "]
 except:
     API_KEY = "SUA_CHAVE_AQUI_PARA_TESTE_LOCAL"
 
@@ -99,4 +98,5 @@ with col2:
 
 # --- RODAPÉ ---
 st.markdown("---")
+
 st.caption("Foco 2026: Consistência é melhor que intensidade. Continue estudando!")
