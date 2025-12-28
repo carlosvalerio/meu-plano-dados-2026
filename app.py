@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 import google.generativeai as genai
 
+
 # --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(page_title="DataPath AI 2026", layout="wide", page_icon="🚀")
 
@@ -100,4 +101,5 @@ with col2:
 st.markdown("---")
 
 st.caption("Foco 2026: Consistência é melhor que intensidade. Continue estudando!")
+
 
