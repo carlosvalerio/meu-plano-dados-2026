@@ -28,8 +28,7 @@ conn = init_db()
 
 def update_nota(area, nota):
     cursor = conn.cursor()
-    cursor.execute('UPDATE roda_vida WHERE area = ?', (nota, area)) # Correção de sintaxe SQL básica
-    # Correção: cursor.execute('UPDATE roda_vida SET nota = ? WHERE area = ?', (nota, area))
+    # O comando correto precisa do SET para atribuir o novo valor
     cursor.execute('UPDATE roda_vida SET nota = ? WHERE area = ?', (nota, area))
     conn.commit()
 
@@ -101,5 +100,6 @@ with col2:
 st.markdown("---")
 
 st.caption("Foco 2026: Consistência é melhor que intensidade. Continue estudando!")
+
 
 
